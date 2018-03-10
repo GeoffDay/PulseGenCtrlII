@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <author>Geoff Day</author>
+ <class>bSpinBoxWidget</class>
+ <widget class="QWidget" name="bSpinBoxWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>160</width>
+    <height>141</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>1</horstretch>
+    <verstretch>1</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>100</width>
+    <height>110</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>160</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>151</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>110</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>160</width>
+     <height>200</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="title">
+    <string>GroupBox</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>156</width>
+      <height>95</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMaximumSize</enum>
+     </property>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="sizeConstraint">
+        <enum>QLayout::SetMinimumSize</enum>
+       </property>
+       <item>
+        <widget class="QPushButton" name="AddHundredThouButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>18</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="icons.qrc">
+           <normaloff>:/up_arrow.svg</normaloff>:/up_arrow.svg</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="AddTenThouButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>18</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="icons.qrc">
+           <normaloff>:/up_arrow.svg</normaloff>:/up_arrow.svg</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="AddThousandButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>18</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="icons.qrc">
+           <normaloff>:/up_arrow.svg</normaloff>:/up_arrow.svg</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="dotlSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>4</width>
+           <height>25</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="AddHundredButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>18</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="icons.qrc">
+           <normaloff>:/up_arrow.svg</normaloff>:/up_arrow.svg</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="AddTenButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>18</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="icons.qrc">
+           <normaloff>:/up_arrow.svg</normaloff>:/up_arrow.svg</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="AddOneButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>18</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="icons.qrc">
+           <normaloff>:/up_arrow.svg</normaloff>:/up_arrow.svg</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="timeSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="sizeConstraint">
+        <enum>QLayout::SetMinimumSize</enum>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QSpinBox" name="spinBox">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>110</width>
+           <height>36</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Serif</family>
+           <pointsize>22</pointsize>
+           <kerning>true</kerning>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="frame">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+         <property name="buttonSymbols">
+          <enum>QAbstractSpinBox::NoButtons</enum>
+         </property>
+         <property name="showGroupSeparator" stdset="0">
+          <bool>true</bool>
+         </property>
+         <property name="maximum">
+          <number>327680</number>
+         </property>
+         <property name="singleStep">
+          <number>5</number>
+         </property>
+         <property name="value">
+          <number>34</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="timelabel">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>19</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>ns  </string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="SubHundredThouButton">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>18</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="icons.qrc">
+           <normaloff>:/down_arrow.svg</normaloff>:/down_arrow.svg</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="SubTenThouButton">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>18</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="icons.qrc">
+           <normaloff>:/down_arrow.svg</normaloff>:/down_arrow.svg</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="SubThousandButton">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>18</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="icons.qrc">
+           <normaloff>:/down_arrow.svg</normaloff>:/down_arrow.svg</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="down">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>4</width>
+           <height>22</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="SubHundredButton">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>18</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="icons.qrc">
+           <normaloff>:/down_arrow.svg</normaloff>:/down_arrow.svg</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="SubTenButton">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>18</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="icons.qrc">
+           <normaloff>:/down_arrow.svg</normaloff>:/down_arrow.svg</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="SubOneButton">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>18</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="icons.qrc">
+           <normaloff>:/down_arrow.svg</normaloff>:/down_arrow.svg</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="timeSpacerdown">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>22</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="0" margin="0"/>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>SubTenButton</sender>
+   <signal>clicked()</signal>
+   <receiver>bSpinBoxWidget</receiver>
+   <slot>on_SubTen_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>117</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>97</x>
+     <y>110</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>AddThousandButton</sender>
+   <signal>clicked()</signal>
+   <receiver>bSpinBoxWidget</receiver>
+   <slot>on_AddThousand_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>67</x>
+     <y>40</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>110</x>
+     <y>80</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SubOneButton</sender>
+   <signal>clicked()</signal>
+   <receiver>bSpinBoxWidget</receiver>
+   <slot>on_SubOne_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>139</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>110</x>
+     <y>56</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SubHundredButton</sender>
+   <signal>clicked()</signal>
+   <receiver>bSpinBoxWidget</receiver>
+   <slot>on_SubHundred_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>95</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>59</x>
+     <y>102</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>AddTenButton</sender>
+   <signal>clicked()</signal>
+   <receiver>bSpinBoxWidget</receiver>
+   <slot>on_AddTen_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>117</x>
+     <y>34</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>110</x>
+     <y>40</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>AddOneButton</sender>
+   <signal>clicked()</signal>
+   <receiver>bSpinBoxWidget</receiver>
+   <slot>on_AddOne_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>139</x>
+     <y>36</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>110</x>
+     <y>11</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>AddHundredButton</sender>
+   <signal>clicked()</signal>
+   <receiver>bSpinBoxWidget</receiver>
+   <slot>on_AddHundred_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>95</x>
+     <y>44</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>110</x>
+     <y>103</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SubThousandButton</sender>
+   <signal>clicked()</signal>
+   <receiver>bSpinBoxWidget</receiver>
+   <slot>on_SubThousand_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>67</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>43</x>
+     <y>110</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>AddTenThouButton</sender>
+   <signal>clicked()</signal>
+   <receiver>bSpinBoxWidget</receiver>
+   <slot>on_AddTenThou_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>34</x>
+     <y>34</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>88</x>
+     <y>60</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>AddHundredThouButton</sender>
+   <signal>clicked()</signal>
+   <receiver>bSpinBoxWidget</receiver>
+   <slot>on_AddHundredThou_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>12</x>
+     <y>34</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>88</x>
+     <y>60</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SubTenThouButton</sender>
+   <signal>clicked()</signal>
+   <receiver>bSpinBoxWidget</receiver>
+   <slot>on_SubTenThou_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>34</x>
+     <y>87</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>88</x>
+     <y>60</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SubHundredThouButton</sender>
+   <signal>clicked()</signal>
+   <receiver>bSpinBoxWidget</receiver>
+   <slot>on_SubHundredThou_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>12</x>
+     <y>87</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>88</x>
+     <y>60</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>on_AddOne_Clicked()</slot>
+  <slot>on_AddTen_Clicked()</slot>
+  <slot>on_AddThousand_Clicked()</slot>
+  <slot>on_AddHundred_Clicked()</slot>
+  <slot>on_SubOne_Clicked()</slot>
+  <slot>on_SubTen_Clicked()</slot>
+  <slot>on_SubHundred_Clicked()</slot>
+  <slot>on_SubThousand_Clicked()</slot>
+  <slot>on_AddTenThou_Clicked()</slot>
+  <slot>on_AddHundredThou_Clicked()</slot>
+  <slot>on_SubHundredThou_Clicked()</slot>
+  <slot>on_SubTenThou_Clicked()</slot>
+ </slots>
+</ui>
